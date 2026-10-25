@@ -46,11 +46,25 @@ function scanCode() {
         alert('No QR data found')
     }
     if (typeof data.data === 'string') {
-        const isUrl = URL.canParse(data.data);
-        window.AppsManagement.installPackage(data.data)
+        const isUrl = validateUrl(data.data)
+        if (!isUrl) {
+            alert("Not a URL")
+            return
+        }
+        const QRUrl = new URL(data.data);
+        const manifestUrl = QRUrl.href;
+        window.AppsManagement.installPackage(manifestUrl)
     }
     if (data.data === null) {
         notify("Failed to scan, no manifest found")
+    }
+}
+function validateUrl(string) {
+    try {
+        new URL(string)
+        return true;
+    } catch (e) {
+        return false;
     }
 }
 
