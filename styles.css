@@ -1,0 +1,92 @@
+body {
+    background: #f8f8f8;
+}
+.see {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    pointer-events: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.inner {
+    background: #eeeeee;
+    border-radius:2px;
+    padding: 24px;
+    width: 80vw;
+    height: 80vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-width:2px;
+    border-color:ButtonFace;
+}
+#options {
+pointer-events: none;
+align-items: center;
+padding:0;
+}
+.button {
+    width: 100%;
+    margin: 0 0 12px 0;
+    left:0;
+    display:block;
+    border-width: 3px;
+    border-radius: 3px;
+}
+.header {
+    top: 0;
+}
+.button:last-child {
+    margin-bottom: 0;
+}
+
+.seebtn {
+    width: 75%;
+
+}
+.camera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    pointer-events: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.video {
+    background: black;
+    border-radius:2px;
+    padding: 24px;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-width:2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#videoElement {
+    width: 100vw;
+    height: 100vh;
+}
+#triggerScan {
+    position: absolute;
+    width: 25%;
+    top:90%;
+    left:50%;
+    transform: translateX(-50%);
+    display: block;
+}
+button:focus {
+    background-color: color-mix(in srgb, ButtonFace 90%, black);
+    outline: 1px solid black;
+}
+

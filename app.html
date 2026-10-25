@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="theme-color" content="rgb(0,0,0)" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Sideload</title>
+    <script src="app.js" defer></script>
+    <script src="jsQR.js" defer></script>
+    <script src="arrow-key-navigation.js" defer></script>
+    <script src="appsmanager.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header"><h1>Sideload App</h1></div>
+    <div id="options">
+        <button class="button" id="scanBtn" tabindex="1">Scan QR</button>
+        <button class="button" id="helpBtn" tabindex="1">Help</button>
+    </div>
+    <div class="see" id="help">
+        <div class="inner">
+            <p id="htext"></p>
+            <button class="button seebtn" id="close" tabindex="1" focuslock="true">Close</button>
+        </div>
+    </div>
+    <div class="camera" id="cameravideo">
+        <div class="video">
+        <video nocontrols muted playsinline autoplay id="videoElement"></video>
+        <button class="button" id="triggerScan" tabindex="1" focuslock="true">Scan</button>
+        </div>
+    </div>
+    <div class="notification" id="notification">
+        <div class="innernotif" id="innernotif">
+            <div class="notiftext" id="notiftext"></div>
+        </div>
+    </div>
+    <script src="load.js" defer></script>
+</body>
+</html>

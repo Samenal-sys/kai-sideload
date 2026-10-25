@@ -1,0 +1,44 @@
+{
+  "id": "sideloadqr",
+  "name": "Sideload",
+  "description": "Sideload apps from QR Codes using a computer.",
+  "display": "standalone",
+  "theme_color": "",
+  "lang": "en-US",
+  "start_url": "/app.html",
+  "icons": [
+    {
+      "src": "/56.png",
+      "type": "image/png",
+      "sizes": "56x56"
+    },
+    {
+      "src": "/112.png",
+      "type": "image/png",
+      "sizes": "112x112"
+    }
+  ],
+  "b2g_features": {
+    "display": "Sideload",
+    "version": "3.0.0",
+    "subtitle": "Sideload an App",
+    "type": "web",
+    "core": true,
+    "categories": [
+      "utilities"
+    ],
+    "developer": {
+      "name": "Samenal",
+      "url": "https://s-q.top/"
+    },
+    "permissions": {
+      "video-capture": {},
+      "webapps-manage": {}
+    },
+    "cursor": false,
+    "fullscreen": true,
+    "chrome": {
+      "statusbar": "overlap"
+    }
+  }
+}
